@@ -1,7 +1,10 @@
 import numpy as np
+import tkinter
 from sklearn.datasets import load_iris
 import matplotlib.pyplot as plt
 
+import matplotlib as mpl
+mpl.use('Agg')
 
 # iris_data = load_iris()
 # iris = iris_data.data
@@ -67,4 +70,7 @@ y = -(myPerceptron.w[0]*x+myPerceptron.b)/myPerceptron.w[1]
 print(y)
 plt.scatter(T[T[:,2]==-1][:,0],T[T[:,2]==-1][:,1],label='0')
 plt.scatter(T[T[:,2]==1][:,0],T[T[:,2]==1][:,1],label='1')
+# plt.imshow(x)
 plt.show()
+plt.savefig('Tdata3.png')
+# print("123")

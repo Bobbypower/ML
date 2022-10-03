@@ -12,4 +12,5 @@ y = -(myPerceptron.w[0]*x+myPerceptron.b)/myPerceptron.w[1]
 plt.plot(x,y)
 plt.scatter(T[T[:,2]==-1][:,0],T[T[:,2]==-1][:,1],label='0')
 plt.scatter(T[T[:,2]==1][:,0],T[T[:,2]==1][:,1],label='1')
+plt.savefig("Validpicture.jpg")
 plt.show()

@@ -1,0 +1,6 @@
+{
+    "git.ignoreLimitWarning": true,
+    "jupyter.generateSVGPlots": true,
+    "jupyter.themeMatplotlibPlots": true,
+    "editor.minimap.autohide": true
+}
